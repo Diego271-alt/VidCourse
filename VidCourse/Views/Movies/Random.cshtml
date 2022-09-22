@@ -1,0 +1,14 @@
+﻿@model VidCourse.ViewModels.RandomViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Movie.Name</h2>
+
+@foreach (var customer in Model.Customer)
+{
+    <p>@customer.Name</p>
+}
+
+
